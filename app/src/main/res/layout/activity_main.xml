@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4th yr BSIT"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMMENTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <CheckBox
+        android:id="@+id/cb_ICS115"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:text="ICS 115"
+        android:background="@drawable/edittextborder"
+        app:layout_constraintEnd_toEndOf="@+id/cb_IT205"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb_IT205"
+        app:layout_constraintTop_toBottomOf="@+id/cb_IT205" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:onClick="saveData"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_comments"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="summaryPage"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_comments"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <CheckBox
+        android:id="@+id/cb_IT_Elec4"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:background="@drawable/edittextborder"
+        android:text="IT-Elec4"
+        app:layout_constraintEnd_toEndOf="@+id/cb_IT_Elec3"
+        app:layout_constraintStart_toStartOf="@+id/cb_IT_Elec3"
+        app:layout_constraintTop_toBottomOf="@+id/cb_IT_Elec3" />
+
+    <CheckBox
+        android:id="@+id/cb_IT205"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextborder"
+        android:text="IT 205"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Header"
+        app:layout_constraintStart_toStartOf="@+id/tv_Header"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Header"
+        tools:text="IT 205" />
+
+    <EditText
+        android:id="@+id/et_comments"
+        android:layout_width="350dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittextborder"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_comment"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment" />
+
+    <CheckBox
+        android:id="@+id/cb_IT_Elec3"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:text="IT-Elec3"
+        android:background="@drawable/edittextborder"
+        app:layout_constraintEnd_toEndOf="@+id/cb_ICS125"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb_ICS125"
+        app:layout_constraintTop_toBottomOf="@+id/cb_ICS125" />
+
+    <CheckBox
+        android:id="@+id/cb_F_Elec2"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:text="F-Elec2"
+        android:background="@drawable/edittextborder"
+        app:layout_constraintEnd_toEndOf="@+id/cb_IT_Elec4"
+        app:layout_constraintStart_toStartOf="@+id/cb_IT_Elec4"
+        app:layout_constraintTop_toBottomOf="@+id/cb_IT_Elec4" />
+
+    <CheckBox
+        android:id="@+id/cb_F_Elec3"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:text="F-Elec3"
+        android:background="@drawable/edittextborder"
+        app:layout_constraintEnd_toEndOf="@+id/cb_F_Elec2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb_F_Elec2"
+        app:layout_constraintTop_toBottomOf="@+id/cb_F_Elec2" />
+
+    <CheckBox
+        android:id="@+id/cb_IT_Elec2"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:text="IT-Elec2"
+        android:background="@drawable/edittextborder"
+        app:layout_constraintEnd_toEndOf="@+id/cb_ICS115"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb_ICS115"
+        app:layout_constraintTop_toBottomOf="@+id/cb_ICS115" />
+
+    <CheckBox
+        android:id="@+id/cb_ICS125"
+        android:layout_width="371dp"
+        android:layout_height="44dp"
+        android:text="ICS 125"
+        android:background="@drawable/edittextborder"
+        app:layout_constraintEnd_toEndOf="@+id/cb_IT_Elec2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb_IT_Elec2"
+        app:layout_constraintTop_toBottomOf="@+id/cb_IT_Elec2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

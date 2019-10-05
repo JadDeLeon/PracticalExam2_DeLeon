@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".summary">
+
+    <TextView
+        android:id="@+id/tv_summaryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="4th yr BSIT"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_RequestedSubjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="REQUESTED SUBJECTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/tv_commentsSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="COMMENTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <TextView
+        android:id="@+id/tv_summaryList"
+        android:layout_width="344dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/otherborders"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/tv_RequestedSubjects"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RequestedSubjects" />
+
+    <TextView
+        android:id="@+id/tv_commentSummary"
+        android:layout_width="342dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/otherborders"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_commentsSummary"
+        app:layout_constraintTop_toBottomOf="@+id/tv_commentsSummary" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:onClick="send"
+        android:text="SEND"
+        app:layout_constraintStart_toStartOf="@+id/tv_commentSummary"
+        app:layout_constraintTop_toBottomOf="@+id/tv_commentSummary" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="31dp"
+        android:onClick="previousPage"
+        android:text="PREVIOUS"
+        app:layout_constraintEnd_toEndOf="@+id/tv_commentSummary"
+        app:layout_constraintTop_toBottomOf="@+id/tv_commentSummary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
